@@ -1,0 +1,333 @@
+.entete,
+.bis {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 5px 0px #000000;
+    
+}
+
+.liens-entete {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3%;
+    width: 80%;
+    padding-top: 30px;
+}
+
+.superheros {
+    background: url(./images/bg.png);
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    margin: 0;
+}
+
+.simplegrid {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.grid-simple {
+
+    display: grid;
+    grid-template-columns: (1fr, 1fr, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    border: solid 5px orange;
+    
+}
+
+.header {
+    grid-area: header;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.content {
+    grid-area: content;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.footer {
+    grid-area: footer;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+
+.header,
+.sidebar,
+.content,
+.footer {
+    padding: 20px;
+    text-align: center;
+    border: solid;
+    border-color: orange;
+}
+
+.morecomplexgrid {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.grid-complexe {
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: repeat(7, 100px);
+    text-align: center;
+    
+    font-size: 20px;
+}
+
+.item1 {
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+.item2 {
+    grid-column: 1/2;
+    grid-row: 2/7;
+}
+
+.item3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.item4 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.item5 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.item6 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.item7 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.item8 {
+    grid-column: 3/5;
+    grid-row: 2/7;
+}
+
+.item9 {
+    grid-column: 1/5;
+    grid-row: 7/8;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item9 {
+    border: solid;
+    border-color: orange;
+    padding: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 100px;
+    transform: rotate(360deg);
+}
+
+.gridwithcontent {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.grid-complexedeux {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: center;
+    align-content: center;
+    background-color: #e9e3e3;
+    
+
+
+}
+
+.item10 {
+    grid-column: 1/3;
+    grid-row: 1/7;
+    
+    
+}
+
+.item11 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.item12 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.item13 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.item14 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.item15 {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+.item16 {
+    grid-column: 4/9;
+    grid-row: 1/7;
+    align-content: center;
+}
+
+.item17 {
+    grid-column: 1/9;
+    grid-row: 7/8;
+    border-top: dashed ;
+    border-width: 1px;
+    border-color: red;
+
+}
+
+.item11,
+.item12,
+.item13,
+.item14,
+.item15,
+.item17 {
+    text-align: center;
+}
+
+.item11>img,
+.item12>img,
+.item13>img,
+.item14>img,
+.item15>img {
+    width: 75px;
+    border-radius: 50%;
+}
+
+.item10>img {
+    width: 100%;
+    border-bottom-right-radius: solid;
+    background-color: rgb(134, 25, 25);
+    filter: drop-shadow(16px 16px 16px red);
+    
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.item10,
+.item11,
+.item12,
+.item13,
+.item14,
+.item15,
+.item16,
+.item17 {
+    padding: 20px;
+}
+
+.item17>img {
+    width: 50px;
+}
+
+.item11:hover {
+    transition: all 4.00s;
+    transform: rotateY(360deg);
+}
+
+.item12 :hover {
+    transition: all 4.00s;
+    transform: rotateY(360deg);  
+}
+
+
+.item13 :hover {
+    transition: all 4.00s;
+    transform: rotateY(360deg);
+}
+
+.item14 :hover {
+    transition: all 4.00s;
+    transform: rotateY(360deg);
+}
+
+.item15 :hover {
+    transition: all 4.00s;
+    transform: rotateY(360deg);
+    float: 20%;
+}
+
+
+
